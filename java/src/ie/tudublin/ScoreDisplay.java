@@ -36,3 +36,23 @@ public class ScoreDisplay extends PApplet
 	{
 	}
 }
+
+public class Note 
+{
+	private Char privateNote;
+	private Int privateDuration;
+
+	public Note(char x, int y) {
+		privateNote = x;
+		privateDuration = y;
+	}
+
+	public static void Note(String[] args) {
+		Note myObj = new Note(); // Create an object of class Main (This will call the constructor)
+	  }
+	
+	public String toString(){ 
+		return privateNote+" "+privateDuration;  
+	   }  
+
+}
